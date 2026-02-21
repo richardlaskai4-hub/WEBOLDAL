@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>tahó tihi</title>
+
+<style>
+
+body {
+    background: url(https://www.calendarclub.ca/cdn/shop/files/Poop_Emoji_Vinyl_Sticker.jpg?v=1769455209);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fő doboz */
+.fődoboz {
+    background-color: rgba(255, 150, 3, 0.6);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Kis dobozok */
+.kisdoboz {
+    width: 100%;
+    min-height: 60px; /* ne fix legyen */
+    margin-bottom: 15px;
+    background-color: rgba(125, 52, 0, 0.6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Első doboz */
+.elsődoboz {
+    width: 50%;
+}
+
+/* H1 */
+h1 {
+    margin: 0;
+    color: red;
+    animation: blink 1s linear infinite;
+
+    font-size: clamp(18px, 5vw, 28px); /* mobilbarát méret */
+    word-break: break-word; /* ne lógjon ki */
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Gomb */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: brown;
+    color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 8px;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+</style>
+</head>
+<body>
+
+<div class="fődoboz">
+    <div class="kisdoboz elsődoboz"></div>
+
+    <div class="kisdoboz">
+        <h1>Szar vagy</h1>
+    </div>
+
+    <div class="kisdoboz">
+        <h1>Szar Tihi, Szar Tihi, Szar Tihi</h1>
+    </div>
+
+    <div class="kisdoboz">
+        <h1>Szar Tihi, Szar Tihi, Szar Tihi</h1>
+    </div>
+
+    <div class="kisdoboz">
+        <h1>Szar Tihi, Szar Tihi, Szar Tihi</h1>
+    </div>
+</div>
+
+<button onclick="alert('TE MAJOM!')">Kattints ide</button>
+
+</body>
+</html>
